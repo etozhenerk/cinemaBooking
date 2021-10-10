@@ -1,0 +1,35 @@
+.scheme
+    background: $scheme-bg
+    border-radius: 10px
+    margin-bottom: 40px
+    path
+        &:not(.light)
+            fill: $day-border-op
+            cursor: pointer
+            &:hover
+                fill: $day-border
+        &.booked
+            fill: $scheme-booked
+            cursor: not-allowed
+            &:hover
+                fill: $scheme-booked
+                cursor: not-allowed
+        &.active
+            fill: $active-fill
+            &:hover
+                fill: $active-fill
+    &-legend
+        display: flex
+        align-items: center
+        border-top: 1px solid $day-border
+        max-width: 1024px
+        margin: 0 auto
+        padding-top: 22px
+        padding-bottom: 38px
+        &__label
+            display: flex
+            align-items: center
+            margin-right: 30px
+            color: $white-color-op
+        svg
+            margin-right: 15px
